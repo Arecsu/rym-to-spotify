@@ -1,11 +1,4 @@
 #!/usr/bin/env -S uv run
-# /// script
-# dependencies = [
-#     "requests",
-#     "beautifulsoup4",
-#     "nodriver"
-# ]
-# ///
 
 import sys
 import re

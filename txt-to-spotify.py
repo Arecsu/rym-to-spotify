@@ -1,9 +1,4 @@
 #!/usr/bin/env -S uv run --env-file .env
-# /// script
-# dependencies = [
-#     "spotipy",
-# ]
-# ///
 
 import os
 import spotipy
