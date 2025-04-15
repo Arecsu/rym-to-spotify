@@ -9,9 +9,9 @@ This project consists of two Python scripts designed to scrape public lists from
 ## Features
 
 * Scrapes RateYourMusic lists, handling pagination.
-* Uses `nodriver` to handle dynamically loaded content on RYM.
+* Uses `nodriver` (Chromium) to scrap data from RYM. No sandbox mode. Needs user interaction to bypass Cloudflare's bot protection.
 * Identifies different release types (Album, EP, Compilation, Single).
-* Extracts linked songs (YouTube, Bandcamp) when available on the RYM list. A bit of a stretch though. The algorithmic is very primitive. Using an LLM to analize the descriptions users write in each item of the list to find track mentions would be top notch. I don't want to handle this level of complexity for now.
+* Extracts linked songs (YouTube, Bandcamp) when available on the RYM list. A bit of a stretch though. The algorithm is primitive. Using an LLM to analize the descriptions users write in each item of the list to find track mentions would be top notch. I don't want to handle this level of complexity for now.
 * Generates a structured `.txt` file suitable for the importer script.
 * Authenticates with Spotify using OAuth 2.0.
 * Creates a new private Spotify playlist named after the RYM list.
