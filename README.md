@@ -1,5 +1,8 @@
 # RYM List to Spotify Playlist Importer
 
+<img width="841" alt="image" src="https://github.com/user-attachments/assets/f96c8db2-98ea-48d3-8d88-f46bf4b76e2b" />
+
+
 This project consists of two Python scripts designed to scrape public lists from RateYourMusic (RYM) and import the found music into a new, private Spotify playlist.
 
 1.  **`rym-to-txt.py`**: Scrapes a given RYM list URL, extracting albums, EPs, compilations, singles, and search for linked songs (YouTube/Bandcamp) in the descriptions of each item in the list. Tries is a bit of a stretch honestly, as it is super unpredictable unless we use some sort of LLM processing for the descriptions (this doesn't). It cleans the extracted data and saves it to a structured text file. It uses a Chromium driver to bypass Cloudflare's bot protection. Well... bypass, I mean, a Chromium window will span and you have to interact with the "I'm not a robot" for it to work. Given I've done this for casual usage and fun, I just opted to make it simple.
